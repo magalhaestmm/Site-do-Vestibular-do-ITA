@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITA Vestibular</title>
+</head>
+<body>
+    <!--aqui eu to importando a fonte Inter-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <!--importando o style.css-->
+    <link rel="stylesheet" href="style.css">
+
+    <header class="navbar"> <!--aqui to fazendo o header-->
+        <div class="logo"> <!--colocando a logo e o título à esquerda-->
+            <img src="ITA_logo.png" class="logo-img">
+            <span class="logo-text">Vestibular ITA</span>
+        </div>
+        <nav> <!--nomes das seções do site para navegar-->
+            <ul>
+                <li><a href="#" class="active">Início</a></li>
+                <li><a href="#">Edital</a></li>
+                <li><a href="#">Provas Antigas</a></li>
+                <li><a href="#">Programa de Matérias</a></li>
+                <li><a href="#">Calendário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <h1>Vestibular ITA</h1>
+        <p class="subtitle">Prepare-se para o vestibular mais difícil do país. Excelência em engenharia e tecnologia.</p>
+
+        <div class="buttons">
+            <a href="#" class="btn btn-yellow">Ver Avisos</a>
+            <a href="#provas" class="btn btn-blue">Sobre as Provas</a>
+        </div>
+    </main>
+
+    <section id="provas" class="section-provas">
+        <div class="container">
+            <h2 class="titulo-secao">Estrutura das Provas</h2>
+            <p class="subtitulo-secao">O vestibular do ITA é composto por duas fases com disciplinas específicas.</p>
+
+            <div class="cards-container">
+                <!-- Card 1ª Fase -->
+                <div class="card">
+                    <span class="badge badge-blue">1ª Fase</span>
+                    <h3 class="card-titulo">Prova objetiva com questões de múltipla escolha</h3>
+                    <ul class="lista-materias blue-dots">
+                        <li>Matemática</li>
+                        <li>Física</li>
+                        <li>Química</li>
+                        <li>Português</li>
+                        <li>Inglês</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2ª Fase -->
+                <div class="card">
+                    <span class="badge badge-yellow">2ª Fase</span>
+                    <h3 class="card-titulo">Provas discursivas com resolução completa</h3>
+                    <ul class="lista-materias yellow-dots">
+                        <li>Matemática</li>
+                        <li>Física</li>
+                        <li>Química</li>
+                        <li>Redação</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>
