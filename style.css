@@ -338,6 +338,14 @@ html {
     display: inline-block;
 }
 
+/* Texto azul dos cards de avisos */
+.text-blue {
+    color: #0000ff;
+    font-weight: 700;
+    margin-top: 15px;
+    display: inline-block;
+}
+
 /* Container para centralizar o botão de "Leia Mais" */
 .btn-center-container {
     margin-top: 50px;
