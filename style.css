@@ -16,6 +16,13 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 80px;
+
+    /* === CÓDIGO PARA O HEADER ACOMPANHAR O SCROLL === */
+    position: sticky;
+    top: 0;
+    background-color: #ffffff; /* Fundo sólido para não ver o site por trás */
+    z-index: 1000; /* Fica por cima de todos os outros elementos */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Sombra suave para destacar */
 }
 
 .logo {
@@ -40,18 +47,24 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: #333;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.95rem;
+    padding: 8px 16px; /* Adicionado para o fundo não "pular" quando aparecer */
+    border-radius: 20px;
+    transition: all 0.3s ease; /* Transição suave */
 }
 
-/* Botão "Início" azul */
-/*nav ul li a.active {
-    background-color: #0056D2;
-    color: white;
-    padding: 8px 20px;
-    border-radius: 20px;
-}*/
+/* Quando passa o mouse (azul clarinho) */
+nav ul li a:hover {
+    background-color: #e7f0ff;
+    color: #0056D2;
+}
 
+/* Quando a seção estiver ativa (azulão) */
+nav ul li a.active {
+    background-color: #0056D2;
+    color: #ffffff;
+}
 /* HERO SECTION */
 .hero {
     display: flex;
@@ -59,6 +72,7 @@ nav ul li a {
     align-items: center;
     text-align: center;
     padding-top: 100px;
+    padding-bottom: 120px;
 }
 
 .badge {
@@ -210,4 +224,123 @@ html {
 .blue-dots li::before { color: #0056b3; }
 .yellow-dots li::before { color: #f5a623; }
 
+/* SEÇÃO CALENDÁRIO */
+.section-calendario {
+    background-color: #ffffff; /* Fundo branco para contrastar com a seção anterior */
+    padding: 120px 20px;
+    text-align: center;
+}
 
+/* Container dos Cards do Calendário */
+.cards-calendario-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Para responsividade */
+}
+
+/* Estilo do Card do Calendário */
+.card-calendario {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 40px 20px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    text-align: center; /* Centraliza o conteúdo dentro do card */
+}
+
+.card-calendario:hover {
+    transform: translateY(-5px);
+}
+
+/* Círculo azul claro em volta do ícone */
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    background-color: #e7f0ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto; /* Centraliza a bolinha e dá margem embaixo */
+}
+
+/* Título do mês em amarelo */
+.mes-titulo {
+    font-size: 24px;
+    color: #FFB800;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+/* Descrição do evento */
+.evento-desc {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #0056D2; /* Azul principal da identidade */
+    color: #ffffff;
+    padding: 60px 20px 40px; /* Mais espaço no topo para respirar */
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Espaço entre as linhas de texto */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+/* Tamanho específico para a logo no footer */
+.footer-logo-img {
+    width: 120px; /* Você pode aumentar ou diminuir esse valor se precisar */
+    height: auto;
+}
+
+.footer-tagline {
+    font-size: 16px;
+    font-weight: 400;
+    color: #e7f0ff; /* Um azul bem clarinho, quase branco */
+}
+
+.footer-copyright {
+    font-size: 14px;
+    font-weight: 400;
+    color: #b3d1ff; /* Azul um pouquinho mais escuro para não chamar tanta atenção */
+    margin-top: 20px;
+}
+
+/* Texto amarelo dos cards de avisos */
+.text-yellow {
+    color: #FFB800;
+    font-weight: 700;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+/* Container para centralizar o botão de "Leia Mais" */
+.btn-center-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}

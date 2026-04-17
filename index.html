@@ -18,59 +18,177 @@
         </div>
         <nav> <!--nomes das seções do site para navegar-->
             <ul>
-                <li><a href="#" class="active">Início</a></li>
-                <li><a href="#">Edital</a></li>
-                <li><a href="#">Provas Antigas</a></li>
-                <li><a href="#">Programa de Matérias</a></li>
-                <li><a href="#">Calendário</a></li>
+                <li><a href="#inicio" class="active">Início</a></li>
+                <li><a href="#provas">Sobre as Provas</a></li>
+                <li><a href="#calendario">Calendário</a></li>
+                <li><a href="#avisos">Avisos</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="hero">
+    <main id="inicio" class="hero">
         <h1>Vestibular ITA</h1>
         <p class="subtitle">Prepare-se para o vestibular mais difícil do país. Excelência em engenharia e tecnologia.</p>
 
         <div class="buttons">
-            <a href="#" class="btn btn-yellow">Ver Avisos</a>
-            <a href="#provas" class="btn btn-blue">Sobre as Provas</a>
+            <a href="#" class="btn btn-yellow">Provas Antigas</a>
+            <a href="#" class="btn btn-blue">Edital</a>
         </div>
     </main>
 
-    <section id="provas" class="section-provas">
+<section id="provas" class="section-provas">
         <div class="container">
-            <h2 class="titulo-secao">Estrutura das Provas</h2>
-            <p class="subtitulo-secao">O vestibular do ITA é composto por duas fases com disciplinas específicas.</p>
+            <h2 class="titulo-secao">Sobre as Provas</h2>
+            <p class="subtitulo-secao">O processo seletivo é dividido em duas fases:</p>
 
             <div class="cards-container">
-                <!-- Card 1ª Fase -->
                 <div class="card">
                     <span class="badge badge-blue">1ª Fase</span>
-                    <h3 class="card-titulo">Prova objetiva com questões de múltipla escolha</h3>
+                    <h3 class="card-titulo">Prova Objetiva</h3>
                     <ul class="lista-materias blue-dots">
                         <li>Matemática</li>
                         <li>Física</li>
                         <li>Química</li>
-                        <li>Português</li>
                         <li>Inglês</li>
                     </ul>
                 </div>
 
-                <!-- Card 2ª Fase -->
                 <div class="card">
                     <span class="badge badge-yellow">2ª Fase</span>
-                    <h3 class="card-titulo">Provas discursivas com resolução completa</h3>
+                    <h3 class="card-titulo">Provas discursivas</h3>
                     <ul class="lista-materias yellow-dots">
                         <li>Matemática</li>
                         <li>Física</li>
                         <li>Química</li>
-                        <li>Redação</li>
+                        <li>Português e Redação</li>
                     </ul>
+                </div>
+            </div>
+
+            <div class="btn-center-container">
+                <a href="#" class="btn btn-blue">LEIA MAIS</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="calendario" class="section-calendario">
+        <div class="container">
+            <h2 class="titulo-secao">Calendário 2026</h2>
+            <p class="subtitulo-secao">Fique atento(a) às datas importantes!</p>
+
+            <div class="cards-calendario-container">
+                
+                <div class="card-calendario">
+                    <div class="icon-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0056D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <h3 class="mes-titulo"> 15 de Junho</h3>
+                    <p class="evento-desc">Abertura das Inscrições</p>
+                </div>
+
+                <div class="card-calendario">
+                    <div class="icon-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0056D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="mes-titulo">19 de Outubro</h3>
+                    <p class="evento-desc">1ª Fase - Prova Objetiva</p>
+                </div>
+
+                <div class="card-calendario">
+                    <div class="icon-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0056D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="mes-titulo">25 a 28 de Novembro</h3>
+                    <p class="evento-desc">2ª Fase - Provas Discursivas</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+        <section id="avisos" class="section-provas">
+        <div class="container">
+            <h2 class="titulo-secao">Avisos</h2>
+            <p class="subtitulo-secao">Mantenha-se atualizado(a) com as últimas notícias.</p>
+
+            <div class="cards-container">
+                <!-- Card 1ª Fase -->
+                <div class="card">
+                    <span class="badge badge-blue">27/03/2026</span>
+                    <h3 class="card-titulo">Locais de Exame</h3>
+                    <ul class="lista-materias blue-dots">
+                        <li>Belém</li>
+                        <li>Belo Horizonte</li>
+                        <li>Brasília</li>
+                        <li>Campinas</li>
+                    </ul>
+                    <p>Ler mais...</p>
+                </div>
+
+                <!-- Card 2ª Fase -->
+                <div class="card">
+                    <span class="badge badge-yellow">01/04/2026</span>
+                    <h3 class="card-titulo">Solicitação de isenção de inscrição</h3>
+                    <ul class="lista-materias yellow-dots">
+                        <li>Período para a Solicitação: 14 abr a 10 mai 2026</li>
+                        <li>Divulgação dos Resultados: 22 mai 2025</li>
+                    </ul>
+                    <p>Envie sua documentação!</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="ITA_logo.png" alt="Logo ITA" class="footer-logo-img">
+                <span class="footer-logo-text">Vestibular ITA</span>
+            </div>
+            <p class="footer-tagline">Instituto Tecnológico de Aeronáutica</p>
+            <p class="footer-copyright">&copy; 2026 Vestibular ITA. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+<script>
+        const sections = document.querySelectorAll("main, section");
+        const navLinks = document.querySelectorAll("nav ul li a");
+
+        window.addEventListener("scroll", () => {
+            let current = "";
+
+            // Verifica qual seção está na tela
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                // Desconta um pedaço do topo (150px) para ativar a cor antes de rolar até o final do título
+                if (scrollY >= sectionTop - 150) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            // Adiciona a classe 'active' no link correspondente e remove dos outros
+            navLinks.forEach((link) => {
+                link.classList.remove("active");
+                if (link.getAttribute("href") === `#${current}`) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
